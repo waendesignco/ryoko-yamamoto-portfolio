@@ -99,6 +99,14 @@ textarea {
      color: #262630;
    }
 
+   img {
+     width: 100%;
+   }
+
+   figure {
+     margin: 0;
+   }
+
    /****** GRID ******/
    .full-width {
      width: 100%;
@@ -287,27 +295,19 @@ textarea {
    }
 
    /****** CONTACT ******/
-   .contact-title h2{
-     font-family:'Merriweather', serif;
-     font-size: 1em;
-     font-weight: bold;
-     color: #262630;
-     text-align:center;
-   }
-
-   #contact {
+   #contact .full-width{
      height: auto;
      background: url('../img/footer-background.png')center no-repeat #9883E5;
      background-size: cover;
      margin: 0.1em;
    }
 
-   #contact .title {
-     width: 100%;
+   .contact-title h2{
+     font-family:'Merriweather', serif;
+     font-size: 1em;
+     font-weight: bold;
+     color: #262630;
      text-align:center;
-     margin: auto;
-     display: flex;
-     justify-content: center;
    }
 
    h4 {
@@ -317,13 +317,22 @@ textarea {
      font-size: 0.8em;
    }
 
-   #envelope {
-     padding-left: 2em;
+   .email {
+     display: flex;
+     justify-content: center;
+     flex-flow: row nowrap;
+   }
+
+   p.fontawesome-icon .f0e0 {
+     width: 3em;
+     height: auto;
+     color: #527158;
      padding-right: 0.5em;
    }
 
    #contact a {
-     text-align: center;
+     display: flex;
+     justify-content: center;
      color: #262630;
      font-weight: bold;
      font-size: 0.7em;
@@ -336,13 +345,14 @@ textarea {
 
    ul#socialmedia {
      display: flex;
-     flex-flow: row nowrap;
-     text-align: : center;
+     justify-content: center;
+     padding-left: 0px;
    }
 
-   ul img {
-     margin: 0 auto;
-     padding-left: 2.5em;
+   #socialmedia li {
+     width: 3em;
+     height: 3em;
+     padding: 1em;
    }
 
    footer {
@@ -358,6 +368,12 @@ textarea {
    .jap-sans {
      font-family: 'Noto+Sans+JP', sans-serif;
    }
+
+   h2.jap-serif {
+     font-size: 1.4em;
+   }
+
+
 
    /****** WORK PAGE add later******/
    .temp h2 {
