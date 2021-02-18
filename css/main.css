@@ -114,9 +114,8 @@ textarea {
    /****** HEADER ******/
    header {
      height: 30em;
-     background: url('../img/hero-img.png');
+     background: url('../img/hero-img.png')center no-repeat #9883E5;
      background-size: cover;
-     background-position: center;
      overflow: auto;
    }
 
@@ -298,7 +297,8 @@ textarea {
 
    #contact {
      height: auto;
-     background: url('../img/footer-background.png');
+     background: url('../img/footer-background.png')center no-repeat #9883E5;
+     background-size: cover;
      margin: 0.1em;
    }
 
