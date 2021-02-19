@@ -138,6 +138,7 @@ textarea {
      padding: 0.2em;
      background: white;
      border: 1px solid #FFFFFF;
+     border-radius: 0.2em;
      font-size: 1.25em;
      color: #9883E5;
      text-align: center;
@@ -166,6 +167,7 @@ textarea {
    nav ul li a {
      background: white;
      border: 0.1em solid #9883E5;
+     border-radius: 0.2em;
      font-size: 0.7em;
      color: #9883E5;
      text-align: center;
@@ -271,6 +273,7 @@ textarea {
      width: 50%;
      height: auto;
      border: 0.4em double #FFFFFF;
+     border-radius: 0.4em;
      margin: auto;
    }
 
@@ -295,14 +298,15 @@ textarea {
    }
 
    /****** CONTACT ******/
-   #contact .full-width{
+   #contact .full-width {
+     width: 100%;
      height: auto;
      background: url('../img/footer-background.png')center no-repeat #9883E5;
      background-size: cover;
      margin: 0.1em;
    }
 
-   .contact-title h2{
+   .contact-title h2 {
      font-family:'Merriweather', serif;
      font-size: 1em;
      font-weight: bold;
@@ -314,20 +318,18 @@ textarea {
      text-align: center;
      color: #262630;
      font-family:'Merriweather', serif;
-     font-size: 0.8em;
+     font-size: 0.7em;
    }
 
    .email {
      display: flex;
      justify-content: center;
-     flex-flow: row nowrap;
    }
 
-   p.fontawesome-icon .f0e0 {
-     width: 3em;
+   i.fas.fa-envelope-square {
+     width: 1.5em;
      height: auto;
-     color: #527158;
-     padding-right: 0.5em;
+     font-size: 1em;
    }
 
    #contact a {
@@ -350,9 +352,13 @@ textarea {
    }
 
    #socialmedia li {
-     width: 3em;
-     height: 3em;
+     width: 2em;
+     height: 2em;
      padding: 1em;
+   }
+
+   #socialmedia a {
+     font-size: 1.2em;
    }
 
    footer {
