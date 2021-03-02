@@ -136,7 +136,7 @@ textarea {
      width: 180%;
      margin: 1.7em 0.5em;
      padding: 0.2em;
-     background: white;
+     background: #FFFFFF;
      border: 1px solid #FFFFFF;
      border-radius: 0.2em;
      font-size: 1.25em;
@@ -144,11 +144,11 @@ textarea {
      text-align: center;
    }
 
-   nav {
+   .nav {
      width: 100%;
      display: flex;
      flex-flow: column;
-     padding: 1em 1em;
+     padding: 1em 0;
    }
 
    nav ul {
@@ -158,6 +158,8 @@ textarea {
      align-content: flex-start;
      flex-wrap: wrap;
      margin: 0 1em;
+     padding-left: 0;
+     margin-left: 0;
    }
 
    nav ul li {
@@ -175,9 +177,13 @@ textarea {
      padding: 0.3em 0.3em;
    }
 
+   .tagline {
+     width: 100%;
+     padding: 1em 0;
+   }
+
    header h2 {
      width: 85%;
-     clear: both;
      font-family: 'Merriweather', serif;
      font-size: 1em;
      font-weight: 600;
@@ -212,7 +218,6 @@ textarea {
      width: 100%;
      display: flex;
      flex-flow: column;
-
    }
 
    .image-container {
@@ -485,22 +490,9 @@ textarea {
 
 /***** TABLETS *****/
 @media (min-width: 768px) {
-
-}
-
-/***** DESKTOPS *****/
-@media (min-width: 1200px) {
-  .third-width {
-    width: 33%;
-    float: left;
-  }
-
-  header {
-    height: 30em;
-    background: url('../img/hero-img.png');
-    background-size: cover;
-    background-position: center;
-    overflow: auto;
+  .top {
+   display: flex;
+   flex-flow: row nowrap;
   }
 
   header h3 {
@@ -514,15 +506,18 @@ textarea {
     text-align: center;
   }
 
-  nav {
-    float: right;
-    padding: 2.5em 1em;
+  .nav {
+    width: 50%;
+    float: left;
+    padding: 2.5em 0;
   }
 
   nav ul {
     display: flex;
     justify-content: flex-start;
     margin: 0 1em;
+    padding-left: 0;
+    margin-left: 0;
   }
 
   nav ul li {
@@ -539,122 +534,52 @@ textarea {
     padding: 0.3em 0.3em;
   }
 
-  header h2 {
-    font-size: 1.5em;
-    padding: 3em 0;
+  .tagline {
+    padding: 6em 0;
   }
 
-  .port-title {
-   padding: 0.5em 0;
-   font-size: 1em;
+  .pf {
+    flex-flow: row nowrap;
   }
 
-  .image {
-    padding-left: 2em;
+  .image-container {
+    width: 45%;
+    padding-left: 1em;
     float: left;
   }
+  
   .container {
    float: left;
-   padding: 0.7em 0 0 4em;
-   width: 50%;
+   padding: 0.7em 0 0 2em;
+   width: 45%;
    height: auto;
    box-sizing: border-box;
    text-align: left;
    display: inline-block;
   }
 
-  /****** ABOUT ******/
-
-  .title h2 {
-    padding: 0.5em 0;
-    font-family:'Merriweather', serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #FFFFFF;
-    text-align:center;
+  .content-wrapper {
+    display: flex;
+    flex-flow: row-reverse;
   }
 
-  .about-img {
-    border: 0.6em double #FFFFFF;
-    display: flex;
-    margin: 0 0 3em 5em;
+  .about-image-container {
+    width: 50%;
   }
 
   .about-container {
-    display: flex;
-    flex-flow: row wrap;
-    padding: 0 1.5em;
-  }
-
-  p {
-    font-size: 0.8em;
-    font-weight: lighter;
-  }
-
-  h3  {
-    font-family:'Merriweather', serif;
-  }
-
-  /****** CONTACT ******/
-  .contact-title h2{
-    font-family:'Merriweather', serif;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #262630;
-    text-align:center;
-  }
-
-  #contact {
-    height: auto;
-    background: url('../img/footer-background.png');
-    margin: 0.3em;
-  }
-
-  #contact .title {
-    text-align:center;
-    margin: auto;
-  }
-
-  h4 {
-    text-align: center;
-    color: #262630;
-    font-family:'Merriweather', serif;
-    font-size: 0.8em;
-  }
-
-  #envelope {
-    padding-left: 2em;
-    padding-right: 0.5em;
-  }
-
-  #contact a {
-    text-align: center;
-    color: #262630;
-    font-weight: bold;
-    font-size: 0.7em;
-    padding-bottom: 0.5em;
-  }
-
-  ul {
-    list-style: none;
-  }
-
-  ul#socialmedia {
-    display: flex;
-    flex-flow: row nowrap;
-    text-align: : center;
-  }
-
-  ul img {
-    margin: 0 auto;
-    padding-left: 3.3em;
-  }
-
-  footer {
-    text-align: center;
-    font-size: 0.5em;
+    width: 100%;
+    padding: 0 1em;
   }
 }
+
+/***** DESKTOPS *****/
+@media (min-width: 1200px) {
+  .third-width {
+    width: 33%;
+    float: left;
+  }
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
