@@ -87,25 +87,54 @@ textarea {
    Author's custom styles
    ========================================================================== */
    /****** BASE STYLES ******/
-   html {
-     height: 100%
-   }
+html {
+  height: 100%
+}
 
-   body {
-     height: 100%
-     font-family: 'Montserrat', sans-serif;
-     font-size: 1.5em;
-     font-weight: normal;
-     color: #262630;
-   }
+body {
+  height: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: normal;
+  color: #262630;
+}
 
-   img {
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h4 {
+  font-size: 1.12em;
+}
+
+h5 {
+  font-size: 0.83em;
+}
+
+h6 {
+  font-size: 0.75em;
+}
+
+p {
+  font-size: 1em;
+  line-height: 1.3em;
+  padding: 0 0.3em;
+}
+
+img {
      width: 100%;
-   }
+}
 
-   figure {
-     margin: 0;
-   }
+figure {
+  margin: 0;
+}
 
    /****** GRID ******/
    .full-width {
@@ -121,7 +150,7 @@ textarea {
 
    /****** HEADER ******/
    header {
-     height: 30em;
+     height: 40em;
      background: url('../img/hero-img.png')center no-repeat #9883E5;
      background-size: cover;
      overflow: auto;
@@ -132,14 +161,17 @@ textarea {
      flex-flow: column;
    }
 
+   .top {
+    margin-bottom: 3em;
+   }
+
    header h3 {
      width: 180%;
      margin: 1.7em 0.5em;
      padding: 0.2em;
-     background: #FFFFFF;
+     background: #FFFFFF99;
      border: 1px solid #FFFFFF;
      border-radius: 0.2em;
-     font-size: 1.25em;
      color: #9883E5;
      text-align: center;
    }
@@ -185,16 +217,13 @@ textarea {
    header h2 {
      width: 85%;
      font-family: 'Merriweather', serif;
-     font-size: 1em;
      font-weight: 600;
-     line-height: 1.2em;
      color: #72A1E5FF;
      margin: auto;
      text-align: center;
    }
 
    header h2 span {
-     font-size: 1em;
      color: #50C9CEFF;
    }
 
@@ -204,16 +233,15 @@ textarea {
    }
 
    .port-title {
-   	padding: 0.2em 0;
-   	font-family:'Merriweather', serif;
-   	font-size: 0.8em;
-   	font-weight: bold;
-   	color: #9883E5FF;
-     text-align:center;
+   	 padding: 0.2em 0;
+   	 font-family:'Merriweather', serif;
+   	 font-weight: bold;
+   	 color: #9883E5FF;
+    text-align:center;
    }
 
    .pf {
-   	 margin: 1em 0;
+   	 margin: 1.5em 0;
      overflow: auto;
      width: 100%;
      display: flex;
@@ -236,7 +264,7 @@ textarea {
 
    .container {
    	float: left;
-   	padding: 0.5em 0 0 0.5em;
+   	padding: 0.5em 0 0 2.5em;
    	width: 95%;
    	height: auto;
     box-sizing: border-box;
@@ -245,8 +273,7 @@ textarea {
    }
 
    .container h3 {
-     font-size: 0.8em;
-     border-bottom: 0.1em dotted #9883E5FF;
+    border-bottom: 0.1em dotted #9883E5FF;
    }
 
    /****** ABOUT ******/
@@ -259,12 +286,11 @@ textarea {
    }
 
    .title h2 {
-     padding: 0.3em 0;
      font-family:'Merriweather', serif;
-     font-size: 1em;
      font-weight: bold;
      color: #FFFFFF;
-     text-align:center;
+     text-align: center;
+     margin-bottom: 0;
   }
 
    .about-image-container {
@@ -288,17 +314,11 @@ textarea {
      padding: 0 0.5em;
    }
 
-   h5 {
-     font-size: 0.7em;
-   }
-
    p {
-     font-size: 0.5em;
      font-weight: lighter;
    }
 
    h3  {
-     font-size: 1em;
      font-family:'Merriweather', serif;
    }
 
@@ -313,17 +333,15 @@ textarea {
 
    .contact-title h2 {
      font-family:'Merriweather', serif;
-     font-size: 1em;
      font-weight: bold;
      color: #262630;
      text-align:center;
    }
 
-   h4 {
+   #contact h4 {
      text-align: center;
      color: #262630;
      font-family:'Merriweather', serif;
-     font-size: 0.7em;
    }
 
    .email {
@@ -331,10 +349,13 @@ textarea {
      justify-content: center;
    }
 
+   h3.fontawesome-icon {
+     margin-top: 0;
+     margin-bottom: 0;
+   }
+
    i.fas.fa-envelope-square {
      width: 1.5em;
-     height: auto;
-     font-size: 1em;
    }
 
    #contact a {
@@ -342,7 +363,6 @@ textarea {
      justify-content: center;
      color: #262630;
      font-weight: bold;
-     font-size: 0.7em;
      padding-bottom: 0.5em;
    }
 
@@ -363,7 +383,7 @@ textarea {
    }
 
    #socialmedia a {
-     font-size: 1.2em;
+     font-size: 2em;
    }
 
    footer {
@@ -381,10 +401,8 @@ textarea {
    }
 
    h2.jap-serif {
-     font-size: 1.4em;
+     font-size: 2em;
    }
-
-
 
    /****** WORK PAGE add later******/
    .temp h2 {
@@ -493,28 +511,23 @@ textarea {
   .top {
    display: flex;
    flex-flow: row nowrap;
+   margin-bottom: 7em;
   }
 
   header h3 {
     width: 9em;
-    margin: 1.7em 0.5em;
-    padding: 0.2em;
-    background: white;
-    border: 1px solid #FFFFFF;
     font-size: 1.25em;
-    color: #9883E5;
-    text-align: center;
+    margin: 1.7em 1em;
   }
 
   .nav {
     width: 50%;
-    float: left;
-    padding: 2.5em 0;
-  }
+    padding: 2.5em 1em;
+      }
 
   nav ul {
     display: flex;
-    justify-content: flex-start;
+    justify-content: flex-end;
     margin: 0 1em;
     padding-left: 0;
     margin-left: 0;
@@ -531,11 +544,16 @@ textarea {
     color: #9883E5;
     text-align: center;
     text-transform: uppercase;
-    padding: 0.3em 0.3em;
+    padding: 0.3em;
+  }
+
+  header h2 {
+    width: 65%;
   }
 
   .tagline {
-    padding: 6em 0;
+    display: flex;
+    align-items: center;
   }
 
   .pf {
@@ -544,14 +562,14 @@ textarea {
 
   .image-container {
     width: 45%;
-    padding-left: 1em;
+    padding-left: 1.5em;
     float: left;
   }
-  
+
   .container {
    float: left;
-   padding: 0.7em 0 0 2em;
-   width: 45%;
+   padding-left: 3em;
+   width: 50%;
    height: auto;
    box-sizing: border-box;
    text-align: left;
@@ -565,21 +583,68 @@ textarea {
 
   .about-image-container {
     width: 50%;
+    margin-bottom: 2em;
   }
 
   .about-container {
     width: 100%;
     padding: 0 1em;
   }
+
+  #contact div.third-width {
+      width: 33%;
+      float: left;
+  }
+
+  h2.jap-serif {
+    font-size: 2em;
+  }
 }
 
 /***** DESKTOPS *****/
 @media (min-width: 1200px) {
-  .third-width {
-    width: 33%;
-    float: left;
+  header h3 {
+    width: 12em;
+    padding: 0.4em;
+    font-size: 1.5em;
+    margin: 1.7em 3em;
   }
 
+  nav ul li {
+    margin: 0 0.5em;
+  }
+
+  nav ul li a {
+    font-size: 1.2em;
+    padding: 0.3 0.5em;
+  }
+
+  h2 {
+    font-size: 1.8em;
+  }
+
+  .container {
+   float: left;
+   padding-left: 3em;
+   width: 45%;
+  }
+
+  .image-container {
+    padding-left: 3em;
+  }
+
+  .about-image-container {
+    margin-bottom: 2em;
+  }
+
+  .top {
+   margin-bottom: 5em;
+  }
+
+  h2.jap-serif {
+    font-size: 2.5em;
+  }
+}
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
